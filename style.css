@@ -1,0 +1,164 @@
+/* --- CUSTOM PROPERTIES (Variables Centralizadas) --- */
+:root {
+    --color-primario: #e63946;
+    --color-secundario: #ffb703;
+    --color-fondo: #f8f9fa;
+    --color-texto: #1d3557;
+    --blanco: #ffffff;
+    --espaciado: 1.5rem;
+    --radius: 16px;
+    --shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* --- ESTILOS BASE --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--espaciado);
+}
+
+/* --- COMPONENTES DE LA LANDING --- */
+.main-nav {
+    background: var(--blanco);
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo span { color: var(--color-primario); }
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: #666;
+    font-style: italic;
+}
+
+.price {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primario);
+    margin: 1rem 0;
+}
+
+/* Formulario */
+.styled-form {
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+fieldset {
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+legend { font-weight: 700; padding: 0 0.5rem; }
+
+.field { margin-bottom: 1.2rem; }
+
+label { display: block; margin-bottom: 0.4rem; font-weight: 600; }
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+}
+
+.btn-cta {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* --- APARTADO DE COMPONENTES (DICCIONARIO TÉCNICO) --- */
+.component-library {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #fff;
+    border-top: 5px solid var(--color-secundario);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.tech-title { color: var(--color-primario); margin-bottom: 0.5rem; }
+.tech-intro { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+
+.comp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.comp-card {
+    padding: 1.5rem;
+    background: #f1f5f9;
+    border-radius: 12px;
+}
+
+.comp-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-texto);
+    border-bottom: 2px solid var(--color-secundario);
+    display: inline-block;
+}
+
+code {
+    background: #e2e8f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--color-primario);
+}
+
+.var-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.color-preview { width: 20px; height: 20px; border-radius: 4px; border: 1px solid #ddd; }
+.color-preview.primario { background: var(--color-primario); }
+.color-preview.secundario { background: var(--color-secundario); }
+
+/* --- RESPONSIVE DESIGN --- */
+.landing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .landing-grid { grid-template-columns: 1.2fr 1fr; align-items: center; }
+    .comp-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.main-footer { text-align: center; padding: 2rem; opacity: 0.6; }

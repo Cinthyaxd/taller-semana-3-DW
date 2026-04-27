@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Burger | Landing Semántica Profesional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-nav">
+        <nav class="container">
+            <strong class="logo">Thunder<span>Burger</span></strong>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="landing-grid">
+            
+            <article class="product-info">
+                <figure class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800" alt="Hamburguesa Angus con queso fundido">
+                    <figcaption>Carne 100% Angus certificada</figcaption>
+                </figure>
+                
+                <header class="product-text">
+                    <h1>Classic Thunder</h1>
+                    <p>Nuestra hamburguesa insignia con doble cheddar, pan brioche y salsa secreta.</p>
+                    <data value="12.50" class="price">$12.50</data>
+                </header>
+            </article>
+
+            <section class="order-form-container">
+                <form id="orderForm" class="styled-form" aria-labelledby="form-title">
+                    <h2 id="form-title">Haz tu Pedido</h2>
+                    
+                    <fieldset>
+                        <legend>Información de Entrega</legend>
+                        
+                        <div class="field">
+                            <label for="userName">Nombre completo</label>
+                            <input type="text" id="userName" name="name" placeholder="Ej. Juan Pérez" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="userAddress">Dirección exacta</label>
+                            <input type="text" id="userAddress" name="address" placeholder="Av. Principal 123" required>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-cta">Confirmar y Pagar</button>
+                </form>
+            </section>
+        </section>
+
+        <aside class="component-library">
+            <h2 class="tech-title">Diccionario de Componentes y Semántica</h2>
+            <p class="tech-intro">Arquitectura modular y buenas prácticas aplicadas.</p>
+            
+            <div class="comp-grid">
+                <div class="comp-card">
+                    <h3>Etiquetas Semánticas</h3>
+                    <ul class="comp-list">
+                        <li><code>&lt;article&gt;</code>: Producto independiente.</li>
+                        <li><code>&lt;figure&gt;</code>: Media con contexto.</li>
+                        <li><code>&lt;fieldset&gt;</code>: Agrupación lógica de inputs.</li>
+                        <li><code>&lt;data&gt;</code>: SEO (Precio procesable).</li>
+                    </ul>
+                </div>
+
+                <div class="comp-card">
+                    <h3>Variables CSS (:root)</h3>
+                    <div class="var-item">
+                        <div class="color-preview primario"></div>
+                        <span>--color-primario</span>
+                    </div>
+                    <div class="var-item">
+                        <div class="color-preview secundario"></div>
+                        <span>--color-secundario</span>
+                    </div>
+                    <div class="var-item">
+                        <code>--espaciado: 1.5rem</code>
+                    </div>
+                </div>
+
+                <div class="comp-card">
+                    <h3>Accesibilidad (A11y)</h3>
+                    <p>Contraste optimizado, <code>labels</code> vinculados por ID y estructura de encabezados <code>h1-h2</code> jerárquica.</p>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Thunder Burger Co. - Sabor que hace ruido.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
